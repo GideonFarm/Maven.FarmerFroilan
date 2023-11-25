@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
-public abstract class ChickenAbstract {
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.Produce;
+
+public abstract class ChickenAbstract implements Animal, Produce {
 }
