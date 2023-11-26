@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.CropsAndProduce;
 
-public class RiceGrain {
+import com.zipcodewilmington.froilansfarm.Utilities.Edible;
+
+public class RiceGrain implements Edible {
 }

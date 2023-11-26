@@ -1,5 +1,8 @@
 package com.zipcodewilmington.froilansfarm.CropsAndProduce;
 
-public interface Produce {
+import com.zipcodewilmington.froilansfarm.Utilities.Edible;
 
+public interface Produce {
+    boolean hasBeenFertilized = false;
+    public <T extends Edible> T yield();
 }
