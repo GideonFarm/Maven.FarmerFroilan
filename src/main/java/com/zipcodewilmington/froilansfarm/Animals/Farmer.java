@@ -26,18 +26,21 @@ public class Farmer extends Person implements Botanist{
         return true;
     }
 
-    @Override
-    public boolean mount(Rideable rideable) {
-        return true;
-    }
-
-    @Override
-    public boolean dismount(Rideable rideable) {
-        return true;
-    }
 
     @Override
     public boolean plant(Crop crop, CropRow<Crop> cropRow) {
         return true;
     }
+
+
+    @Override
+    public boolean mount() {
+        return true;
+    }
+
+    @Override
+    public boolean dismount() {
+        return true;
+    }
 }
+

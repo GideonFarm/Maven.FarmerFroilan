@@ -19,11 +19,11 @@ public class Chicken extends ChickenAbstract implements Produce {
 
     @Override
     public boolean eat(Edible edible) {
-        return false;
+        return true;
     }
 
     @Override
     public String makeNoise() {
-        return null;
+        return "bawk";
     }
 }
