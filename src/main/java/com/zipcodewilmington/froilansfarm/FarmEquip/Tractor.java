@@ -15,6 +15,7 @@ public class Tractor extends TractorAbstract {
         return "Vroom";
     }
 
-//    public void harvestCrop(CropRow<Crop> crop){
-    // need to add harvest Method
+    public boolean harvestCrop(CropRow<Crop> crop){
+        return true;
+    }
 }

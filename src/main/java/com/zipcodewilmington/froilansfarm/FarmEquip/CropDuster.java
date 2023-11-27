@@ -1,5 +1,8 @@
 package com.zipcodewilmington.froilansfarm.FarmEquip;
 
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.Crop;
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.CropRow;
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.TomatoPlant;
 import com.zipcodewilmington.froilansfarm.Housing.Farm;
 
 public class CropDuster extends CropDusterAbstract {
@@ -20,5 +23,8 @@ public class CropDuster extends CropDusterAbstract {
 
 //    public boolean fertilize(){
 //        return true; // need to fix method with Crop, CropRow
-
+    public boolean fertilize(CropRow<Crop>cropRow) {
+        return true;
+    }
 }
+

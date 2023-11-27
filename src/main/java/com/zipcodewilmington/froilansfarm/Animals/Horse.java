@@ -10,6 +10,6 @@ public class Horse extends HorseAbstract{
 
     @Override
     public boolean eat(Edible edible) {
-        return false;
+        return true;
     }
 }
