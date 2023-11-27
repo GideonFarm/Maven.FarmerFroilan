@@ -5,6 +5,8 @@ import com.zipcodewilmington.froilansfarm.CropsAndProduce.CropRow;
 import com.zipcodewilmington.froilansfarm.Housing.Farm;
 
 public class Tractor extends TractorAbstract {
+
+    boolean hasBeenHarvested = false;
     @Override
     public boolean operate(Farm farm) {
         return true;
@@ -15,7 +17,8 @@ public class Tractor extends TractorAbstract {
         return "Vroom";
     }
 
-    public boolean harvestCrop(CropRow<Crop> crop){
+    public boolean harvestCrop(Crop crop){
+        boolean hasBeenHarvested = true;
         return true;
     }
 }
