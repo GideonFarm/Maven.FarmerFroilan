@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Utilities;
 
-public interface Rideable {
+public interface Rideable <RiderType extends Rider> {
 }

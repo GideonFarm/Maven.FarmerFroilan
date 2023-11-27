@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Utilities;
 
-public interface Eater {
+public interface Eater <FoodType extends Edible>{
 
-    String eat();
+    public boolean eat(FoodType edible);
 }
