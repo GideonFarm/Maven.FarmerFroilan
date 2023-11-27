@@ -28,5 +28,17 @@ public class Storage {
     public void addPerson(Person person) {
         farmHouse.add(person);
     }
+
+    public int getStableSize() {
+        return stable.size();
+    }
+
+    public int getChickenCoopSize() {
+        return chickenCoop.size();
+    }
+
+    public int getFarmHouseSize() {
+        return farmHouse.size();
+    }
 }
 
