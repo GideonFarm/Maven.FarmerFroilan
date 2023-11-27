@@ -5,6 +5,8 @@ import com.zipcodewilmington.froilansfarm.Utilities.Rideable;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.List;
+
 public class CropDusterTest {
 
     @Test
@@ -25,7 +27,6 @@ public class CropDusterTest {
     @Test
     public void testOperate(){
         CropDuster duster = new CropDuster();
-
         Farm farm = new Farm();
         Assert.assertTrue(duster.operate(farm));
 
