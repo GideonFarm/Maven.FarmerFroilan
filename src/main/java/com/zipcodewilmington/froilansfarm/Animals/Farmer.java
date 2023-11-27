@@ -3,23 +3,14 @@ package com.zipcodewilmington.froilansfarm.Animals;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Crop;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.CropRow;
 import com.zipcodewilmington.froilansfarm.Utilities.Edible;
-import com.zipcodewilmington.froilansfarm.Utilities.Rideable;
 
-public class Farmer extends Person implements Botanist{
+public class Farmer extends Person implements Botanist {
 
     @Override
     public String makeNoise() {
         return "Hello";
     }
 
-    @Override
-    public boolean mount(Horse rideable) {
-        return true;
-    }
-    @Override
-    public boolean dismount(Horse horse) {
-        return true;
-    }
 
     @Override
     public boolean eat(Edible edible) {
@@ -32,15 +23,15 @@ public class Farmer extends Person implements Botanist{
         return true;
     }
 
-
     @Override
-    public boolean mount() {
+    public boolean mount(Object rideable) {
         return true;
     }
 
     @Override
-    public boolean dismount() {
+    public boolean dismount(Object rideable) {
         return true;
     }
 }
+
 

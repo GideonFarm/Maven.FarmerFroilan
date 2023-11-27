@@ -60,17 +60,6 @@ public class FarmerTest {
         Horse horse = new Horse();
         Assert.assertTrue(horse instanceof Rideable);
     }
-    @Test
-    public void testMount(){
-        Farmer farmer = new Farmer();
-        Assert.assertTrue(farmer.mount());
-    }
-
-    @Test
-    public void testDismount(){
-        Farmer farmer = new Farmer();
-        Assert.assertTrue(farmer.dismount());
-    }
 
     @Test
     public void testEat(){
