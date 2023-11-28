@@ -17,6 +17,7 @@ public class SundayTest {
         CropRow<Crop> rice = new CropRow<>();
         CropRow<Crop> corn = new CropRow<>();
 
+
         Froilan.plant(tomatoPlant, firstRow);
         Froilan.plant(riceStalk, rice);
         Froilan.plant(cornStalk, corn);
