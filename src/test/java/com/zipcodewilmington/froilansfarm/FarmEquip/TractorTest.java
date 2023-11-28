@@ -28,10 +28,11 @@ public class TractorTest {
     public void testHarvest(){
         Tractor tractor = new Tractor();
         Crop tomato = new TomatoPlant();
+        CropRow<Crop> tomato1 = new CropRow<>();
 
-        tractor.harvestCrop(tomato);
 
-        Assert.assertTrue(tractor.harvestCrop(tomato));
+
+        Assert.assertTrue(tractor.harvestCrop(tomato, tomato1));
 
 
 

@@ -16,7 +16,7 @@ public class Tractor extends TractorAbstract {
         return "Vroom";
     }
 
-    public boolean harvestCrop(Crop crop){
+    public boolean harvestCrop(Crop crop, CropRow<Crop> cropRow){
         boolean hasBeenHarvested = true;
         return true;
     }
