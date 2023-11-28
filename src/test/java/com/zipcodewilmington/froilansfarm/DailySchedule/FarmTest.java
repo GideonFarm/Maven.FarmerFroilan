@@ -7,6 +7,7 @@ import com.zipcodewilmington.froilansfarm.CropsAndProduce.EarCorn;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EdibleEgg;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Tomato;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -34,14 +35,13 @@ public class FarmTest {
         Froilan.eat(earCorn);
 
         // When
-        assertTrue(Farmer.eat(egg1));
-        assertTrue(Farmer.eat(egg2));
-        assertTrue(Farmer.eat(egg3));
-        assertTrue(Farmer.eat(egg4));
-        assertTrue(Farmer.eat(egg5));
-        assertTrue(Farmer.eat(tomato1));
-        assertTrue(Farmer.eat(tomato2));
-        assertTrue(Farmer.eat(earCorn));
+        assertTrue(Froilan.eat(egg2));
+        assertTrue(Froilan.eat(egg3));
+        assertTrue(Froilan.eat(egg4));
+        assertTrue(Froilan.eat(egg5));
+        assertTrue(Froilan.eat(tomato1));
+        assertTrue(Froilan.eat(tomato2));
+        assertTrue(Froilan.eat(earCorn));
     }
 
     @Test
@@ -62,11 +62,11 @@ public class FarmTest {
         Froilanda.eat(earCorn2);
 
         // Then
-        assertTrue(Farmer.eat(egg1));
-        assertTrue(Farmer.eat(egg2));
-        assertTrue(Farmer.eat(tomato));
-        assertTrue(Farmer.eat(earCorn1));
-        assertTrue(Farmer.eat(earCorn2));
+        assertTrue(Froilanda.eat(egg1));
+        assertTrue(Froilanda.eat(egg2));
+        assertTrue(Froilanda.eat(tomato));
+        assertTrue(Froilanda.eat(earCorn1));
+        assertTrue(Froilanda.eat(earCorn2));
     }
 
     @Test
