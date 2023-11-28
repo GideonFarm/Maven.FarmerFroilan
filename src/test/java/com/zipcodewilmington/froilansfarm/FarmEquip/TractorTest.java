@@ -1,9 +1,7 @@
 package com.zipcodewilmington.froilansfarm.FarmEquip;
 
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.CornStalk;
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.Crop;
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.RiceStalk;
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.TomatoPlant;
+import com.zipcodewilmington.froilansfarm.Animals.Farmer;
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.*;
 import com.zipcodewilmington.froilansfarm.Housing.Farm;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,8 +11,9 @@ public class TractorTest {
     @Test
     public void testOperate(){
         Tractor tract = new Tractor();
-        Farm farm = new Farm();
-        Assert.assertTrue(tract.operate(farm));
+        Farmer farmer = new Farmer();
+        Field field = new Field();
+        Assert.assertTrue(tract.operate(farmer, field));
     }
 
     @Test
