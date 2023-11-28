@@ -1,16 +1,11 @@
 package com.zipcodewilmington.froilansfarm.DailySchedule;
 
 import com.zipcodewilmington.froilansfarm.Animals.Farmer;
-import com.zipcodewilmington.froilansfarm.Animals.FarmerTest;
 import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import com.zipcodewilmington.froilansfarm.Animals.Pilot;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EarCorn;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EdibleEgg;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Tomato;
-import com.zipcodewilmington.froilansfarm.Utilities.Edible;
-import com.zipcodewilmington.froilansfarm.Utilities.Rideable;
-import com.zipcodewilmington.froilansfarm.Utilities.Rider;
-import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
