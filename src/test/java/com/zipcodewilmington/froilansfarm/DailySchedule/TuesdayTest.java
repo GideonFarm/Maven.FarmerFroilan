@@ -2,12 +2,11 @@ package com.zipcodewilmington.froilansfarm.DailySchedule;
 
 import com.zipcodewilmington.froilansfarm.Animals.Farmer;
 import com.zipcodewilmington.froilansfarm.Animals.Pilot;
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.CornStalk;
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.Crop;
-import com.zipcodewilmington.froilansfarm.CropsAndProduce.CropRow;
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.*;
 import com.zipcodewilmington.froilansfarm.FarmEquip.CropDuster;
 import com.zipcodewilmington.froilansfarm.FarmEquip.Tractor;
 import com.zipcodewilmington.froilansfarm.Housing.Farm;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -32,21 +31,20 @@ public class TuesdayTest {
         Tractor tractor = new Tractor();
         CropRow cropRow = new CropRow();
         Crop cornStalk = new CornStalk();
+
+
+        Assert.assertTrue(Froilan.mount(tractor));
+        Assert.assertTrue(Froilan.dismount(tractor));
+
+
         //When
         boolean result = tractor.harvestCrop(cornStalk, cropRow);
         //Then
         assertEquals(true, result);
     }
-}
 
-/*import com.zipcodewilmington.froilansfarm.CropsAndProduce.*;
-import com.zipcodewilmington.froilansfarm.FarmEquip.Tractor;
-import org.junit.Assert;
-import org.junit.Test;
-
-public class TuesdayTest {
     @Test
-    public void tuesdayTest(){
+    public void tuesdayTestDay() {
         Farmer Froilan = new Farmer();
         Tractor tractor = new Tractor();
         Crop tomatoPlant = new TomatoPlant();
@@ -66,7 +64,7 @@ public class TuesdayTest {
         String actual1 = tractor.makeNoise();
         String expected1 = "Vroom";
 
-        tractor.harvestCrop(tomatoPlant,tomato);
+        tractor.harvestCrop(tomatoPlant, tomato);
         tractor.harvestCrop(cornStalk, corn);
         tractor.harvestCrop(riceStalk, rice);
 
@@ -78,9 +76,6 @@ public class TuesdayTest {
         Assert.assertTrue(tractor.harvestCrop(cornStalk, corn));
         Assert.assertTrue(tractor.harvestCrop(riceStalk, rice));
 
-
-
-
-
-    }*/
+    }
+}
 

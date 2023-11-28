@@ -6,6 +6,8 @@ import com.zipcodewilmington.froilansfarm.Animals.Pilot;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EarCorn;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EdibleEgg;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Tomato;
+import com.zipcodewilmington.froilansfarm.Housing.Storage;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -78,6 +80,23 @@ public class FarmTest {
         boolean result = Froilan.mount(horse);
         //The
         assertEquals(true, result);
+    }
+
+    @Test
+    public void horseinStable(){
+        Horse horse1 = new Horse();
+        Horse horse2 = new Horse();
+        Horse horse3 = new Horse();
+
+        Storage stable = new Storage();
+
+        stable.addHorse(horse1);
+        stable.addHorse(horse2);
+        stable.addHorse(horse3);
+
+        int expected = 3;
+
+        Assert.assertEquals(expected, stable.getStableSize());
     }
 
     @Test

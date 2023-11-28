@@ -3,10 +3,6 @@ import com.zipcodewilmington.froilansfarm.Utilities.Edible;
 
 public class Pilot extends Person {
 
-    public static boolean eat(int i) {
-        return true;
-    }
-
     @Override
     public boolean eat(Edible edible) {
         return true;
