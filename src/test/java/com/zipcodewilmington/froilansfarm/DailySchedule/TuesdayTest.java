@@ -36,6 +36,8 @@ public class TuesdayTest {
         boolean result = tractor.harvestCrop(cornStalk, cropRow);
         //Then
         assertEquals(true, result);
+    }
+}
 
 /*import com.zipcodewilmington.froilansfarm.CropsAndProduce.*;
 import com.zipcodewilmington.froilansfarm.FarmEquip.Tractor;
@@ -81,4 +83,4 @@ public class TuesdayTest {
 
 
     }*/
-}
+

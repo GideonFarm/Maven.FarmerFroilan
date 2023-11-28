@@ -1,8 +1,6 @@
 package com.zipcodewilmington.froilansfarm.DailySchedule;
 
-import com.sun.source.tree.AssertTree;
 import com.zipcodewilmington.froilansfarm.Animals.Farmer;
-import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.*;
 import org.junit.Assert;
 import org.junit.Test;
