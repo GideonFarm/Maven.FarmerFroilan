@@ -6,6 +6,7 @@ import com.zipcodewilmington.froilansfarm.Utilities.Edible;
 
 public class Farmer extends Person implements Botanist {
 
+
     @Override
     public String makeNoise() {
         return "Hello";
