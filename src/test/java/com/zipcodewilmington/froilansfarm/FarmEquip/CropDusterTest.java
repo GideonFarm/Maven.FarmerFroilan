@@ -30,8 +30,9 @@ public class CropDusterTest {
     @Test
     public void testOperate(){
         CropDuster duster = new CropDuster();
-        Farm farm = new Farm();
-        Assert.assertTrue(duster.operate(farm));
+        Pilot pilot = new Pilot();
+        Field field = new Field();
+        Assert.assertTrue(duster.operate(pilot, field));
 
     }
 

@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.FarmEquip;
 
-import com.zipcodewilmington.froilansfarm.Animals.Farmer;
+import com.zipcodewilmington.froilansfarm.Animals.Person;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Crop;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.CropRow;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Field;
@@ -26,8 +26,8 @@ public class CropDuster extends CropDusterAbstract {
     }
 
     @Override
-    public boolean operate(Farmer farmer, Field field) {
-        return false;
+    public boolean operate(Person person, Field field) {
+        return true;
     }
 }
 
