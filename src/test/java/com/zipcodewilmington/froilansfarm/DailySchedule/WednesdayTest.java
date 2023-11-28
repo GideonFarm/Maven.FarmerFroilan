@@ -6,7 +6,9 @@ import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import com.zipcodewilmington.froilansfarm.Animals.Pilot;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EarCorn;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.EdibleEgg;
+import com.zipcodewilmington.froilansfarm.CropsAndProduce.RiceGrain;
 import com.zipcodewilmington.froilansfarm.CropsAndProduce.Tomato;
+import com.zipcodewilmington.froilansfarm.Housing.Storage;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,15 +18,37 @@ public class WednesdayTest {
         Farmer Froilan = new Farmer();
         Pilot Froilanda = new Pilot();
 
+        Storage farmHouse= new Storage();
+
+        farmHouse.addPerson(Froilanda);
+        farmHouse.addPerson(Froilan);
+        int expectedPeople = 2;
+
+        Assert.assertEquals(expectedPeople, farmHouse.getFarmHouseSize());
+
         Chicken chicken = new Chicken();
+        Chicken chicken1 = new Chicken();
+        Chicken chicken2 = new Chicken();
+        Chicken chicken3 = new Chicken();
         Horse horse = new Horse();
         Horse horse1 = new Horse();
+
+        Storage chickencoop = new Storage();
+
+        chickencoop.addChicken(chicken);
+        chickencoop.addChicken(chicken1);
+        chickencoop.addChicken(chicken2);
+        chickencoop.addChicken(chicken3);
+
+        int expectChickens = 4;
+        Assert.assertEquals(expectChickens, chickencoop.getChickenCoopSize());
 
         chicken.yield(); // Edible Egg
 
         EdibleEgg egg1 = new EdibleEgg();
         Tomato tomato = new Tomato();
         EarCorn corn = new EarCorn();
+        RiceGrain rice = new RiceGrain();
 
         // NOISY WEDNESDAY
 
@@ -39,6 +63,13 @@ public class WednesdayTest {
 
         String actual3 = chicken.makeNoise();
         String expected3= "bawk";
+
+        Assert.assertTrue(chicken1.eat(corn));
+        Assert.assertTrue(horse1.eat(corn));
+
+        Assert.assertTrue(Froilanda.eat(tomato));
+        Assert.assertTrue(Froilan.eat(rice));
+
 
         Assert.assertEquals(expected, actual);
         Assert.assertEquals(expected1, actual1);
