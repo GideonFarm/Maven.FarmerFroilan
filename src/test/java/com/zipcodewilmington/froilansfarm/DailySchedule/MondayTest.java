@@ -17,8 +17,7 @@ public class MondayTest {
         Pilot Froilanda = new Pilot();
         CropDuster cropDuster = new CropDuster();
         //When
-        Object cropduster;
-        boolean result = Froilanda.fly(cropduster);
+        boolean result = Froilanda.mount(cropDuster);
         //The
         assertEquals(true, result);
 
@@ -29,8 +28,9 @@ public class MondayTest {
         //Given
         Pilot Froilanda = new Pilot();
         CropRow cropRow = new CropRow();
+        CropDuster cropDuster = new CropDuster();
         //When
-        boolean result = Froilanda.fertilize(cropRow);
+        boolean result = cropDuster.fertilize(cropRow);
         //The
         assertEquals(true, result);
     }
